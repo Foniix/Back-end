@@ -4,7 +4,7 @@ namespace Task2
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             var list = new MyList<int>(10, 1,2,3,4,5,6,7,8,9,10);
             Console.WriteLine("List creating:");
@@ -22,6 +22,14 @@ namespace Task2
             }
 
             Console.WriteLine("\nSize = " + list.Size);
+
+            Console.WriteLine("Task4:");
+            var arr = list.GetArray();
+
+            foreach (var t in arr)
+            {
+                Console.Write(t + " ");
+            }
             Console.ReadKey();
         }
     }
